@@ -15,6 +15,11 @@
 		8945F2E41E546CB600E13688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8945F2E21E546CB600E13688 /* LaunchScreen.storyboard */; };
 		8945F2EF1E546CB700E13688 /* wampIrekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945F2EE1E546CB700E13688 /* wampIrekTests.swift */; };
 		8945F2FA1E546CB700E13688 /* wampIrekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8945F2F91E546CB700E13688 /* wampIrekUITests.swift */; };
+		89769E111E54D62D002B3FA4 /* Donations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89769E0F1E54D62D002B3FA4 /* Donations.storyboard */; };
+		89769E131E54D643002B3FA4 /* FindStation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89769E121E54D643002B3FA4 /* FindStation.storyboard */; };
+		89769E161E54D656002B3FA4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89769E141E54D656002B3FA4 /* Settings.storyboard */; };
+		89769E181E54D672002B3FA4 /* Overlook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89769E171E54D672002B3FA4 /* Overlook.storyboard */; };
+		89769E1C1E54D7D8002B3FA4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89769E1B1E54D7D8002B3FA4 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		8945F2F51E546CB700E13688 /* wampIrekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wampIrekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8945F2F91E546CB700E13688 /* wampIrekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wampIrekUITests.swift; sourceTree = "<group>"; };
 		8945F2FB1E546CB700E13688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89769E101E54D62D002B3FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Donations.storyboard; sourceTree = "<group>"; };
+		89769E121E54D643002B3FA4 /* FindStation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FindStation.storyboard; sourceTree = "<group>"; };
+		89769E151E54D656002B3FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		89769E171E54D672002B3FA4 /* Overlook.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Overlook.storyboard; sourceTree = "<group>"; };
+		89769E1B1E54D7D8002B3FA4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89769E1C1E54D7D8002B3FA4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,7 @@
 				8945F2ED1E546CB700E13688 /* wampIrekTests */,
 				8945F2F81E546CB700E13688 /* wampIrekUITests */,
 				8945F2D51E546CB600E13688 /* Products */,
+				89769E1A1E54D7D8002B3FA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +111,8 @@
 		8945F2D61E546CB600E13688 /* wampIrek */ = {
 			isa = PBXGroup;
 			children = (
+				89769E191E54D68E002B3FA4 /* views */,
 				8945F2D71E546CB600E13688 /* AppDelegate.swift */,
-				8945F2D91E546CB600E13688 /* FirstViewController.swift */,
-				8945F2DB1E546CB600E13688 /* SecondViewController.swift */,
-				8945F2DD1E546CB600E13688 /* Main.storyboard */,
 				8945F2E01E546CB600E13688 /* Assets.xcassets */,
 				8945F2E21E546CB600E13688 /* LaunchScreen.storyboard */,
 				8945F2E51E546CB600E13688 /* Info.plist */,
@@ -126,6 +136,28 @@
 				8945F2FB1E546CB700E13688 /* Info.plist */,
 			);
 			path = wampIrekUITests;
+			sourceTree = "<group>";
+		};
+		89769E191E54D68E002B3FA4 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				8945F2DD1E546CB600E13688 /* Main.storyboard */,
+				89769E171E54D672002B3FA4 /* Overlook.storyboard */,
+				8945F2D91E546CB600E13688 /* FirstViewController.swift */,
+				8945F2DB1E546CB600E13688 /* SecondViewController.swift */,
+				89769E141E54D656002B3FA4 /* Settings.storyboard */,
+				89769E121E54D643002B3FA4 /* FindStation.storyboard */,
+				89769E0F1E54D62D002B3FA4 /* Donations.storyboard */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		89769E1A1E54D7D8002B3FA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89769E1B1E54D7D8002B3FA4 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +269,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89769E181E54D672002B3FA4 /* Overlook.storyboard in Resources */,
 				8945F2E41E546CB600E13688 /* LaunchScreen.storyboard in Resources */,
 				8945F2E11E546CB600E13688 /* Assets.xcassets in Resources */,
+				89769E131E54D643002B3FA4 /* FindStation.storyboard in Resources */,
+				89769E161E54D656002B3FA4 /* Settings.storyboard in Resources */,
+				89769E111E54D62D002B3FA4 /* Donations.storyboard in Resources */,
 				8945F2DF1E546CB600E13688 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +352,22 @@
 				8945F2E31E546CB600E13688 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		89769E0F1E54D62D002B3FA4 /* Donations.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89769E101E54D62D002B3FA4 /* Base */,
+			);
+			name = Donations.storyboard;
+			sourceTree = "<group>";
+		};
+		89769E141E54D656002B3FA4 /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89769E151E54D656002B3FA4 /* Base */,
+			);
+			name = Settings.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -517,6 +569,7 @@
 				8945F3001E546CB700E13688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8945F3011E546CB700E13688 /* Build configuration list for PBXNativeTarget "wampIrekTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +578,7 @@
 				8945F3031E546CB700E13688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8945F3041E546CB700E13688 /* Build configuration list for PBXNativeTarget "wampIrekUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +587,7 @@
 				8945F3061E546CB700E13688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
